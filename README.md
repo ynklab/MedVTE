@@ -6,7 +6,7 @@
 
 MedVTE is a task to determine the numerical relationship of cancers, tumors, nodules, etc., between a premise figure and a hypothesis text. Premise figures are medical imaging test findings (radiological, endoscopic, pathological, etc.) in medical articles.
 
-For more details, please refer to [our paper (the hyperlink will be added later)](https://clinical-nlp.github.io/2023/).
+For more details, please refer to [our paper](https://aclanthology.org/2023.clinicalnlp-1.2/).
 
 ![MedVTE example](static/medvte_overview_github.png)
 
@@ -37,7 +37,7 @@ with the premise figure.
       - the number of lesion numbers cannot be determined only from the premise figure
       - no clauses remain after removing out-of-figure information from the hypothesis
 
-For more details, please refer to [our paper (the hyperlink will be added later)](https://clinical-nlp.github.io/2023/).
+For more details, please refer to [our paper](https://aclanthology.org/2023.clinicalnlp-1.2/).
 
 ![MedVTE example](static/medvte_two_labels.png)
 
@@ -65,5 +65,19 @@ The following is the instruction to create MedVTE and run a baseline model:
 ## BibTeX
 Please cite our paper using BibTeX below when publishing a paper using the MedVTE dataset:
 ```
-(TBA)
+@inproceedings{yanaka-etal-2023-medical,
+    title = "Medical Visual Textual Entailment for Numerical Understanding of Vision-and-Language Models",
+    author = "Yanaka, Hitomi  and
+      Nakamura, Yuta  and
+      Chida, Yuki  and
+      Kurosawa, Tomoya",
+    booktitle = "Proceedings of the 5th Clinical Natural Language Processing Workshop",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.clinicalnlp-1.2",
+    pages = "8--18",
+    abstract = "Assessing the capacity of numerical understanding of vision-and-language models over images and texts is crucial for real vision-and-language applications, such as systems for automated medical image analysis.We provide a visual reasoning dataset focusing on numerical understanding in the medical domain.The experiments using our dataset show that current vision-and-language models fail to perform numerical inference in the medical domain.However, the data augmentation with only a small amount of our dataset improves the model performance, while maintaining the performance in the general domain.",
+}
 ```
