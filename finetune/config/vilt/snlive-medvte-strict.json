@@ -1,0 +1,37 @@
+{
+  "output_dir": "./results/vilt_snlive-medvte-strict",
+  "model_name_or_path": "dandelin/vilt-b32-mlm",
+  "task_names": [
+    "snli-ve",
+    "medvte-strict"
+  ],
+  "do_train": true,
+  "do_eval": true,
+  "do_predict": true,
+  "train_files": {
+    "snli-ve": "./data/snli_ve_train.jsonl",
+    "medvte-strict": "./data/medvte-train.jsonl"
+  },
+  "validation_files": {
+    "snli-ve": "./data/snli_ve_dev.jsonl"
+  },
+  "test_files": {
+    "snli-ve": "./data/snli_ve_test.jsonl",
+    "medvte-strict": "./data/medvte-test.jsonl"
+  },
+  "image_dirs": {
+    "snli-ve": "./data/flickr30k_images",
+    "medvte-strict": "./data/medvte_figures"
+  },
+  "overwrite_output_dir": true,
+  "remove_unused_columns": false,
+  "per_device_eval_batch_size": 48,
+  "per_device_train_batch_size": 48,
+  "gradient_accumulation_steps": 3,
+  "logging_steps": 1000,
+  "save_steps": 1000,
+  "save_strategy": "steps",
+  "eval_steps": 1000,
+  "evaluation_strategy": "steps",
+  "do_cross_validation": false
+}

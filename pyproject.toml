@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "medicat"
+version = "0.1.0"
+description = ""
+authors = ["yutanakamura-tky <yutanakamura.tky@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+torch = ">=1.10.0"
+transformers = "4.20.1"
+allennlp = "2.10.1"
+matplotlib = "3.3.4"
+seaborn = "^0.11.2"
+plotly = "^5.3.1"
+stanfordnlp = "^0.2.0"
+benepar = "^0.2.0"
+ndjson = "^0.3.1"
+opencv-python = ">=4.0.0"
+wget = "^3.2"
+omegaconf = "^2.2.0"
+iopath = "^0.1.9"
+torchtext = "^0.12.0"
+datasets = "^2.1.0"
+evaluate = "^0.2.2"
+torchmultimodal-nightly = "^2022.12.1"
+
+[tool.poetry.dev-dependencies]
+isort = "^5.9.3"
+black = "^22.0"
+flake8 = "^3.9.2"
+pre-commit = "^2.15.0"
+pytest = "^6.2.5"
+ipykernel = "^6.3.1"
+jupyter = "^1.0.0"
+ipywidgets = "^7.6.4"
+click = "<8.1"
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "^3.5.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
